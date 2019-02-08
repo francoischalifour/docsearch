@@ -1,0 +1,1245 @@
+{
+  "hits": [
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": null,
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#___gatsby",
+      "content": "When I was first introduced to  Medium , I was astonished by the simplicity of its user experience. One of its neat features is the  image zoom  system. Today, I tried to reproduce it as nearly as possible in pure JavaScript",
+      "anchor": "___gatsby",
+      "objectID": "393790231",
+      "_snippetResult": {
+        "content": {
+          "value": "When I was first introduced to  <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um , I was astonished",
+          "matchLevel": "full"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          }
+        },
+        "content": {
+          "value": "When I was first introduced to  <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um , I was astonished by the simplicity of its user experience. One of its neat features is the  image zoom  system. Today, I tried to reproduce it as nearly as possible in pure JavaScript",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["medi"]
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Features",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#features",
+      "content": "Here is the list of the features we want to implement",
+      "anchor": "features",
+      "objectID": "393790261",
+      "_snippetResult": {
+        "content": {
+          "value": "Here is the list of the features we want to",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Features",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Here is the list of the features we want to implement",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Features",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Structuring the plugin",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#structuring-the-plugin",
+      "content": "I’ll use ECMAScript 2015 as JavaScript standard and will compile it with a transpiler. The source code is located in the  src  folder which is converted by Webpack into ES5 with Babel. This creates the minified version of the plugin in the  dist  directory",
+      "anchor": "structuring-the-plugin",
+      "objectID": "393790351",
+      "_snippetResult": {
+        "content": {
+          "value": "I’ll use ECMAScript 2015 as JavaScript standard",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Structuring the plugin",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "I’ll use ECMAScript 2015 as JavaScript standard and will compile it with a transpiler. The source code is located in the  src  folder which is converted by Webpack into ES5 with Babel. This creates the minified version of the plugin in the  dist  directory",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Structuring the plugin",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Selecting images",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#selecting-images",
+      "content": "By default, we’d like to apply the effect on all images that can be zoomed",
+      "anchor": "selecting-images",
+      "objectID": "393790431",
+      "_snippetResult": {
+        "content": {
+          "value": "By default, we’d like to apply the effect on",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Selecting images",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "By default, we’d like to apply the effect on all images that can be zoomed",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Selecting images",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Adding the overlay",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#adding-the-overlay",
+      "content": "On click on an image, an overlay should hide the content of the page. This overlay is by default white, but can be overriden by the user",
+      "anchor": "adding-the-overlay",
+      "objectID": "393790491",
+      "_snippetResult": {
+        "content": {
+          "value": "On click on an image, an overlay should hide the",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Adding the overlay",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "On click on an image, an overlay should hide the content of the page. This overlay is by default white, but can be overriden by the user",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Adding the overlay",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Styling the elements",
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Transitioning",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#styling-the-elements",
+      "content": "Before zooming on the target image, we need to",
+      "anchor": "styling-the-elements",
+      "objectID": "393790521",
+      "_snippetResult": {
+        "content": {
+          "value": "Before zooming on the target image, we need to",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Styling the elements",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Transitioning",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Before zooming on the target image, we need to",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Styling the elements",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Transitioning",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Computing the scale and the translation",
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Transitioning",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#computing-the-scale-and-the-translation",
+      "content": "Here comes the mathematics. We’ll need to extract",
+      "anchor": "computing-the-scale-and-the-translation",
+      "objectID": "393790621",
+      "_snippetResult": {
+        "content": {
+          "value": "Here comes the mathematics. We’ll need to extract",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Computing the scale and the translation",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Transitioning",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Here comes the mathematics. We’ll need to extract",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Computing the scale and the translation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Transitioning",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Computing the scale and the translation",
+        "lvl3": "Scale",
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Transitioning",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#scale",
+      "content": "Scale horizontally: \n \n get the minimum value between the image full width and the window’s \n divide it by the image width",
+      "anchor": "scale",
+      "objectID": "393790691",
+      "_snippetResult": {
+        "content": {
+          "value": "Scale horizontally: \n \n get the minimum value between the image full",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Computing the scale and the translation",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl3": {
+            "value": "Scale",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Transitioning",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Scale horizontally: \n \n get the minimum value between the image full width and the window’s \n divide it by the image width",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Computing the scale and the translation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl3": {
+              "value": "Scale",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Transitioning",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Computing the scale and the translation",
+        "lvl3": "Translate",
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Transitioning",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#translate",
+      "content": "Translate horizontally: \n \n subtract the eventual left offset ( padding  or  margin ) \n center the image horizontally considering the new scale",
+      "anchor": "translate",
+      "objectID": "393790791",
+      "_snippetResult": {
+        "content": {
+          "value": "Translate horizontally: \n \n subtract the eventual left offset ( padding  or  margin",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Computing the scale and the translation",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl3": {
+            "value": "Translate",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Transitioning",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Translate horizontally: \n \n subtract the eventual left offset ( padding  or  margin ) \n center the image horizontally considering the new scale",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Computing the scale and the translation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl3": {
+              "value": "Translate",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Transitioning",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Computing the scale and the translation",
+        "lvl3": "Style",
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Transitioning",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#style",
+      "content": "Finally, we fire the animation by adding the styles to the target",
+      "anchor": "style",
+      "objectID": "393790871",
+      "_snippetResult": {
+        "content": {
+          "value": "Finally, we fire the animation by adding the styles to",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Computing the scale and the translation",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl3": {
+            "value": "Style",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Transitioning",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Finally, we fire the animation by adding the styles to the target",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Computing the scale and the translation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl3": {
+              "value": "Style",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Transitioning",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Dismissing the zoom",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#dismissing-the-zoom",
+      "content": "When there’s a target at the moment of the click, that means we have to zoom out. Here is the process to follow",
+      "anchor": "dismissing-the-zoom",
+      "objectID": "393790881",
+      "_snippetResult": {
+        "content": {
+          "value": "When there’s a target at the moment of the",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Dismissing the zoom",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "When there’s a target at the moment of the click, that means we have to zoom out. Here is the process to follow",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Dismissing the zoom",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Handling events",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#handling-events",
+      "content": "Medium’s zoom handles mouse, keyboard, and scroll events. We need to listen to all these events to support all interactions",
+      "anchor": "handling-events",
+      "objectID": "393790961",
+      "_snippetResult": {
+        "content": {
+          "value": "<span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um’s zoom handles mouse, keyboard, and scroll events. We",
+          "matchLevel": "full"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Handling events",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "<span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um’s zoom handles mouse, keyboard, and scroll events. We need to listen to all these events to support all interactions",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["medi"]
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Handling events",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Click",
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Handling events",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#click",
+      "content": "When the user holds a meta key ( ⌘  or  Ctrl ), we need to stop the plugin’s execution and to open the link wrapping the image, or the image source in a new tab. Otherwise, we trigger the zoom",
+      "anchor": "click",
+      "objectID": "393791021",
+      "_snippetResult": {
+        "content": {
+          "value": "When the user holds a meta key ( ⌘  or  Ctrl",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Click",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Handling events",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "When the user holds a meta key ( ⌘  or  Ctrl ), we need to stop the plugin’s execution and to open the link wrapping the image, or the image source in a new tab. Otherwise, we trigger the zoom",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Click",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Handling events",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Keyboard",
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Handling events",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#keyboard",
+      "content": "We have to dismiss the zoom only if the key pressed’s role is to cancel ( esc  and  q )",
+      "anchor": "keyboard",
+      "objectID": "393791031",
+      "_snippetResult": {
+        "content": {
+          "value": "We have to dismiss the zoom only if the key",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Keyboard",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Handling events",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "We have to dismiss the zoom only if the key pressed’s role is to cancel ( esc  and  q )",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Keyboard",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Handling events",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Scroll",
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Handling events",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#scroll",
+      "content": "We also need to dismiss the zoom when the user scrolls. However, we should wait for a certain number of pixels to be scrolled to dismiss it. We, therefore, need to use some new variables",
+      "anchor": "scroll",
+      "objectID": "393791051",
+      "_snippetResult": {
+        "content": {
+          "value": "We also need to dismiss the zoom when the user",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "Scroll",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Handling events",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "We also need to dismiss the zoom when the user scrolls. However, we should wait for a certain number of pixels to be scrolled to dismiss it. We, therefore, need to use some new variables",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "Scroll",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Handling events",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Emitting events",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#emitting-events",
+      "content": "The library should emit an event every time it enters a new state. This way, the user can detect when",
+      "anchor": "emitting-events",
+      "objectID": "393791111",
+      "_snippetResult": {
+        "content": {
+          "value": "The library should emit an event every time it enters",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Emitting events",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "The library should emit an event every time it enters a new state. This way, the user can detect when",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Emitting events",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Exporting the methods",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#exporting-the-methods",
+      "content": "The user may need to trigger the zoom dynamically, without clicking on the image. We, therefore, need to make some methods available outside of the file",
+      "anchor": "exporting-the-methods",
+      "objectID": "393791181",
+      "_snippetResult": {
+        "content": {
+          "value": "The user may need to trigger the zoom dynamically, without",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Exporting the methods",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "The user may need to trigger the zoom dynamically, without clicking on the image. We, therefore, need to make some methods available outside of the file",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Exporting the methods",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "Result",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#result",
+      "content": "You can head over the  demo  to see the result. Let me know if it’s close enough to Medium’s image zoom. Go to the  GitHub repository  to see the actual code",
+      "anchor": "result",
+      "objectID": "393791201",
+      "_snippetResult": {
+        "content": {
+          "value": "it’s close enough to <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um’s image zoom. Go",
+          "matchLevel": "full"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "Result",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "You can head over the  demo  to see the result. Let me know if it’s close enough to <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um’s image zoom. Go to the  GitHub repository  to see the actual code",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["medi"]
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "Result",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": null,
+        "lvl3": null,
+        "lvl0": "Reproducing Medium&#x27;s image zoom",
+        "lvl1": "What I learned",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/medium-image-zoom/#what-i-learned",
+      "content": "Webpack is  very  powerful.  PostCSS, load CSS, minification and automation",
+      "anchor": "what-i-learned",
+      "objectID": "393791211",
+      "_snippetResult": {
+        "content": {
+          "value": "Webpack is  very  powerful.  PostCSS, load CSS, minification and",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl0": {
+            "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl1": {
+            "value": "What I learned",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "Webpack is  very  powerful.  PostCSS, load CSS, minification and automation",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl0": {
+              "value": "Reproducing <span class=\"algolia-docsearch-suggestion--highlight\">Medi</span>um's image zoom",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl1": {
+              "value": "What I learned",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hierarchy": {
+        "lvl2": "Editing the levels",
+        "lvl3": null,
+        "lvl0": "Patterns for building console games in C",
+        "lvl1": "Coding the game",
+        "lvl6": null,
+        "lvl4": null,
+        "lvl5": null
+      },
+      "url": "https://francoischalifour.com/eceman/#editing-the-levels",
+      "content": "The whole point of the game is to create levels with new entities and objects. I, therefore, made possible to create your own level right in the game",
+      "anchor": "editing-the-levels",
+      "objectID": "393789841",
+      "_snippetResult": {
+        "content": {
+          "value": "The whole point of the game is to create levels",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "hierarchy": {
+          "lvl2": {
+            "value": "<span class=\"algolia-docsearch-suggestion--highlight\">Edi</span>ting the levels",
+            "matchLevel": "full",
+            "fullyHighlighted": false,
+            "matchedWords": ["medi"]
+          },
+          "lvl0": {
+            "value": "Patterns for building console games in C",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Coding the game",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "content": {
+          "value": "The whole point of the game is to create levels with new entities and objects. I, therefore, made possible to create your own level right in the game",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "hierarchy_camel": [
+          {
+            "lvl2": {
+              "value": "<span class=\"algolia-docsearch-suggestion--highlight\">Edi</span>ting the levels",
+              "matchLevel": "full",
+              "fullyHighlighted": false,
+              "matchedWords": ["medi"]
+            },
+            "lvl0": {
+              "value": "Patterns for building console games in C",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            "lvl1": {
+              "value": "Coding the game",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "nbHits": 21,
+  "page": 0,
+  "nbPages": 2,
+  "hitsPerPage": 20,
+  "processingTimeMS": 1,
+  "exhaustiveNbHits": true,
+  "query": "medi",
+  "params": "query=medium"
+}

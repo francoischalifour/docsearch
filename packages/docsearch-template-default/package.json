@@ -1,0 +1,16 @@
+{
+  "name": "docsearch-template-default",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/docsearch-template-default.cjs.js",
+  "module": "dist/docsearch-template-default.esm.js",
+  "browser": "dist/docsearch-template-default.umd.js",
+  "scripts": {
+    "start": "rollup --config --watch",
+    "build": "rollup --config",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ]
+}

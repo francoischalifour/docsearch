@@ -1,0 +1,21 @@
+{
+  "name": "docsearch.js",
+  "version": "3.0.0-next.0",
+  "description": "Add an autocomplete dropdown to your documentation",
+  "main": "dist/docsearch.cjs.js",
+  "module": "dist/docsearch.esm.js",
+  "browser": "dist/docsearch.umd.js",
+  "license": "MIT",
+  "repository": "algolia/docsearch",
+  "scripts": {
+    "start": "rollup --config --watch",
+    "build": "rollup --config",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "algoliasearch": "^3.32.0"
+  }
+}
