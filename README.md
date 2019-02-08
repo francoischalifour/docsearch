@@ -1,39 +1,50 @@
 # Docsearch
 
+> Create search experiences with DocSearch and its renderers.
+
+_⚠️ This is a POC._
+
 ## Usage
 
 ```js
-const docsearchRenderer = result => {
-  <Downshift
-    itemToString={item => (item ? item.excerpt : '')}
-    initialHighlightedIndex={0}
-    onSelect={(selectedItem, state) => {
-      state.closeMenu()
-      state.inputValue = ''
-    }}
-  >
-  {({inputValue}) => (
-    <div>
-      <input value={inputValue} />
-
-      <ol>
-        {result.map(hit => (
-          <li>{hit.excerpt}</li>
-        ))}
-      </ol>
-    </div>
-  )}
-  </DownShift>
-}
+import docsearch from 'docsearch.js';
+import docsearchDefaultTemplate from 'docsearch-template-default';
 
 docsearch({
   apiKey: 'API_KEY',
   indexName: 'INDEX_NAME',
   searchParameters: {
-    hitsPerPage: 5,
+    hitsPerPage: 10,
     highlightPreTag: '<mark>',
     highlightPostTag: '</mark>',
   },
-  transformResult: result => result,
-})(docsearchRenderer);
+  input: document.querySelector('input'),
+})(docsearchDefaultTemplate);
 ```
+
+## Create your own renderer
+
+```js
+const renderer = ({ result, refine, input }) => {
+  input.addEventListener(
+    'input',
+    event => {
+      refine(event.target.value);
+    },
+    { once: true }
+  );
+
+  const dropdown = getDropdown();
+
+  dropdown.innerHTML = `
+  <ol>
+    ${Object.values(result)
+      .map(hit => `<li>${getSuggestionTemplate(hit)}</li>`)
+      .join('')}
+  </ol>`.trim();
+};
+
+export default renderer;
+```
+
+Check the [default template implementation](packages/docsearch-template-default/index.ts).
